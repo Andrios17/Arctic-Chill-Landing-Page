@@ -1,0 +1,354 @@
+@font-face {
+    font-family: 'Koblenz';
+    src: url('./fonts/Koblenz-Serial-ExtraBold-Regular.woff2') format('woff2'),
+         url('./fonts/Koblenz-Serial-ExtraBold-Regular.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aliceblue;
+    font-family: 'Koblenz', sans-serif;
+}
+
+.navWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: hsl(178, 100%, 50%);
+    width: 100vw;
+    height: 15vh;
+    background-color: aliceblue;
+}
+
+#buslogo {
+    margin-top: 5px;
+    width: 70%;
+}
+
+#missionStatment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: aliceblue;
+}
+
+#missionStatment h1 {
+    font-size: 2em;
+    text-align: center;
+    color: #090b46;
+    margin-bottom: 1em;
+    margin-top: 20px;
+    
+}
+
+#missionStatment p {
+    font-size: 1.2em;
+    text-align: center;
+    color: #83c6f3;
+    margin-bottom: 1em;
+    line-height: 1.5;
+    margin-left: 1em;
+    margin-right: 1em;
+    background-color: #090b46;
+    border-radius: 20px;
+    padding: 5%;
+}
+
+#handyMan {
+    position: absolute;
+    width: 50%;
+    height: 40%;
+    top: 103%;
+    left: 49%;
+}
+
+#badges {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+#badges img {
+    width: 30vw;
+    margin-right: 1em;
+}
+
+.call-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #090b46; 
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px; 
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 1em;
+}
+
+.call-button:hover {
+    background-color: #83c6f3; 
+}
+
+.call-button .phone-icon {
+    margin-right: 10px;
+}
+
+#missionStatment img {
+    width: 50%;
+    max-width: 80%;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+
+#chillGurantee {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: aliceblue;
+    margin-top: 10px;
+    text-align: center;
+    color:#83c6f3;
+}
+
+#chillGurantee h1{
+    font-size: em;
+    text-align: center;
+    color: #090b46;
+    margin-bottom: 1em;
+    margin-top: 20px;
+}
+
+.wrapperInner{
+    width: 90%;
+    text-align: center;
+    background-color: #090b46;
+    color: #83c6f3;
+    border-radius: 10%;
+    margin: 3%;
+}
+
+.wrapperInner h2{
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    margin-top: 20px;
+}
+
+.wrapperInner p{
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    line-height: 1.5;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+#arcticLicense {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: aliceblue;
+}
+
+#brandGallery {
+    width: 100vw;
+    height: 30vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#brandGallery h1 {
+    font-size: 2em;
+    text-align: center;
+    color: #090b46;
+    margin-bottom: 1em;
+    margin-top: 20px;
+}
+
+.gallery {
+    display: flex;
+    animation: rotate 13s infinite;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+#samsung {
+    margin-left: .5px;
+}
+
+#fisher-paykel {
+    margin-left: 1px;
+}
+
+@keyframes rotate {
+    0% { transform: translateX(0); }
+    10% { transform: translateX(0); }
+    15% { transform: translateX(-100%); }
+    25% { transform: translateX(-100%); }
+    30% { transform: translateX(-200%); }
+    40% { transform: translateX(-200%); }
+    45% { transform: translateX(-300%); }
+    55% { transform: translateX(-300%); }
+    60% { transform: translateX(-400%); }
+    70% { transform: translateX(-400%); }
+    75% { transform: translateX(-500%); }
+    80% { transform: translateX(-500%); }
+    85% { transform: translateX(-600%); }
+    90% { transform: translateX(-600%); }
+    100% { transform: translateX(0); }
+}
+
+#areasWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    background-color: aliceblue;
+    margin-top: 20px;
+    line-height: 1.2;
+}
+
+#areasWrapper h1 {
+    font-size: 2em;
+    text-align: center;
+    color: #090b46;
+    margin-bottom: 1em;
+    margin-top: 20px;
+}
+
+#areasWrapper p {
+    width: 95vw;
+    text-align: center;
+
+
+}
+
+#suburbWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    background-color: aliceblue;
+    margin-top: 20px;
+}
+
+#suburbList li {
+    list-style-type: none; 
+}
+
+#suburbList2 li {
+    list-style-type: none; 
+}
+
+#suburbList3 li {
+    list-style-type: none; 
+}
+
+#endingSuburbs {
+    margin-top: 20px;
+}
+
+
+#suburbWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    background-color: aliceblue;
+}
+
+#SydneyMap {
+    width: 90vw;
+    height: 30vh;
+    border: 5px solid #090b46;
+    margin-top: 10px
+}
+
+#bottomFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    background-color: aliceblue;
+    margin-top: 20px;
+    font-weight: bolder;
+}
+
+#bottomFooter img {
+    width: 50%;
+    height: auto;
+    margin-bottom: .5em;
+}
+
+#bottomFooter p {
+    color: #090b46;
+    font-size: 1em;
+    margin-bottom: .5em;
+    text-align: center;
+}
+
+.footerWrapper {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #090b46;
+    width: 100vw;
+    height: 5vh;
+    position: sticky;
+    bottom: 0;
+    background-color: #83c6f3;
+}
+
+.call-button-footer {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #83c6f3; 
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    width: 50vw;
+    height: 5vh;
+}
+
+.email-button-footer{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #090b46;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    width: 50vw;
+    height: 5vh;
+}
